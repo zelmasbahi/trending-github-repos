@@ -25,7 +25,9 @@
     "__tests__/components/RepoCard.test.js",
     "__tests__/index.test.js",
     "__tests__/components/LangFilter.test.js",
-    "__tests__/components/RepoList.test.js"
+    "__tests__/components/RepoList.test.js",
+    "__tests__/utils/index.test.js",
+    "jest.config.js"
   ],
   "exclude": ["node_modules"]
 }
