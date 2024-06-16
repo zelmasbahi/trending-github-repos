@@ -9,6 +9,7 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
+    "types": ["@testing-library/jest-dom"],
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
@@ -16,6 +17,15 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/utils/index.js",
+    "__tests__/components/RepoCard.test.js",
+    "__tests__/index.test.js",
+    "__tests__/components/LangFilter.test.js",
+    "__tests__/components/RepoList.test.js"
+  ],
   "exclude": ["node_modules"]
 }
