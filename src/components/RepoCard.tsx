@@ -3,7 +3,7 @@ import { RepoCardProps } from "@/models";
 export default function RepoCard({ item, starRepo }: RepoCardProps) {
   return (
     <li className="p-4 border-t list-none rounded-2">
-      <div className="flex justify-between items-center">
+      <div className="flex float-right items-center">
         <button onClick={() => starRepo(item)}>
           {item.starred ? "Unstar" : "Star"}
         </button>
