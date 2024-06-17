@@ -1,31 +1,91 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Last week trending repositories
+
+This project is a Next.js application designed to display popular GitHub repositories from the past week. Users can star and filter repositories based on their preferred programming languages.
+
+## Requirements
+
+- Node.js version 18.17.0 or higher
+- npm (comes with Node.js) or yarn (optional)
 
 ## Getting Started
 
-First, run the development server:
+Follow these instructions to set up and run the project on your local machine.
+
+### 1. Clone the Repository
+
+First, clone the repository to your local machine:
 
 ```bash
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
+```
+
+### 2. Install dependencies
+
+First, clone the repository to your local machine:
+
+```bash
+# Using npm
+npm install
+
+# Using yarn
+yarn
+```
+
+### 3. Run development server
+
+Once the dependencies are installed, you can start the development server:
+
+```bash
+# Using npm
 npm run dev
-# or
+
+# Using yarn
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and navigate to http://localhost:3000 to see the application running.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### 4. Run tests
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Run tests
+To run the tests for the application (There are 17 tests, please check **tests** directory), you can use:
 
 ```bash
-yarn run test
+# Using npm
+npm run test
+
+# Using yarn
+yarn test
 ```
+
+### 5. Build for Production
+
+To create an optimized production build of the application (this will run tests as well), run:
+
+```bash
+# Using npm
+npm run build
+
+# Using yarn
+yarn build
+```
+
+### 2. Start the Production Server
+
+After building the application, you can start the production server:
+
+```bash
+# Using npm
+npm run start
+
+# Using yarn
+yarn start
+```
+
+### Project structure
+
+- `components`/: Contains the React components used in the application.
+- `models`/: TypeScript interfaces and types.
+- `pages`/: Next.js pages.
+- `utils`/: Utility functions.
+- `__tests__`/: Contains the test files.
