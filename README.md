@@ -16,8 +16,8 @@ Follow these instructions to set up and run the project on your local machine.
 First, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/zelmasbahi/trending-github-repos.git
+cd trending-github-repos
 ```
 
 ### 2. Install dependencies
