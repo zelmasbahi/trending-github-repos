@@ -4,7 +4,7 @@ export default function RepoCard({ item, starRepo }: RepoCardProps) {
   return (
     <li className="p-4 border-t list-none rounded-2">
       <div className="flex float-right items-center">
-        <button onClick={() => starRepo(item)}>
+        <button onClick={() => starRepo(item)} className="border rounded ">
           {item.starred ? "Unstar" : "Star"}
         </button>
         <span className="ml-2">{item.stars + (item.starred ? 1 : 0)}</span>
@@ -14,6 +14,7 @@ export default function RepoCard({ item, starRepo }: RepoCardProps) {
           {item.name}
         </a>
       </h2>
+      {!!item.language && <span>#{item.language}</span>}
       {item.description && (
         <p className="my-1 pr-4 w-3/4">{item.description}</p>
       )}

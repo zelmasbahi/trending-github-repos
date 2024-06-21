@@ -33,6 +33,8 @@ describe("ReposList component", () => {
 
     expect(getByText("Repo 1")).toBeInTheDocument();
     expect(getByText("Repo 2")).toBeInTheDocument();
+    expect(getByText("10")).toBeInTheDocument();
+    expect(getByText("21")).toBeInTheDocument(); // 20 stars + 1 starred
   });
 
   it("calls starRepo function when star button is clicked", () => {

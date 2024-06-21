@@ -12,7 +12,7 @@ export const getStaticProps: GetStaticProps<{
   repos: RepoProps[];
 }> = async () => {
   const res = await getRepos();
-  return { props: { repos: res } };
+  return { props: { repos: res }, revalidate: 24 * 60 * 60 };
 };
 
 export default function Home({

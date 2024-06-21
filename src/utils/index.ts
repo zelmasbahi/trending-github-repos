@@ -1,5 +1,6 @@
 import { RepoProps } from "@/models";
 
+// Custom  data structures handlers
 export function leftJoin(
   apiRepos: RepoProps[],
   starredRepos: RepoProps[],
@@ -7,8 +8,8 @@ export function leftJoin(
 ): RepoProps[] {
   const lookupMap = new Map(starredRepos.map((item) => [item[id], item]));
   return apiRepos.map((item) => ({
-    ...item,
     ...lookupMap.get(item[id]),
+    ...item,
   }));
 }
 

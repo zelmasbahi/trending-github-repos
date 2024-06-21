@@ -3,8 +3,8 @@ import { render, fireEvent, waitFor } from "@testing-library/react";
 import Main, { getStaticProps } from "../src/pages/index";
 import "@testing-library/jest-dom";
 import { getRepos } from "@/services";
-// Mock getRepos function
 
+// Mock getRepos function
 jest.mock("../src/services/index.ts", () => ({
   getRepos: jest.fn(),
 }));
@@ -18,7 +18,7 @@ const mockRepos = [
     url: "https://github.com/repo1",
     language: "JavaScript",
     stars: 10,
-    starred: false,
+    starred: true,
   },
   {
     id: "2",
@@ -66,7 +66,7 @@ describe("Main page", () => {
   });
 
   test("Repo starring/unstarring", async () => {
-    const { getByText, getAllByText } = render(<Main repos={mockRepos} />);
+    const { getAllByText } = render(<Main repos={mockRepos} />);
     const starButton = getAllByText("Star")?.[0];
 
     // Star repo
